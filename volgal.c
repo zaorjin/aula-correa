@@ -16,7 +16,7 @@ int main(){
             }
         }
     }
-    printf(cont);
+    printf("%d",cont);
 
     return(0);
 }
