@@ -16,7 +16,7 @@ int main(){
             }
         }
     }
-    printf("%d",cont);
+    printf("\nQuantidade de vogais: %d",cont);
 
     return(0);
 }
