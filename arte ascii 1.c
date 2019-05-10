@@ -5,32 +5,14 @@ int main(){
     printf("\nInforme o tamanho da maior linha: ");
     scanf("%d",&n);
     while(l<n){
-        n--;
         c=0;
         printf("\n");
         while(c<n){
             printf("*");
             c++;
         }
+        n--;
     }
 
 return(0);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
