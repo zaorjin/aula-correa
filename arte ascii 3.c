@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int l1=0,c1=0,n1,n2,cc,d1=0,d2=0,d3=0;
+    int l1=0,c1=0,n1,cc;
     printf("\nInforme o tamanho da maior linha: ");
     scanf("%d",&n1);
-    n2=n1;
     cc=n1;
     do{
         c1=0;
