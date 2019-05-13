@@ -2,7 +2,7 @@
 
 int main(){
     int l1=0,c1=0,n1,cc;
-    printf("\nInforme o tamanho da maior linha: ");
+    printf("\nInforme o tamanho da maior linha impar : ");
     scanf("%d",&n1);
     cc=n1;
     do{
