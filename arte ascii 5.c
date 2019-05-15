@@ -5,7 +5,12 @@ int main (){
 int a,r=0,i1=0,i2=0,d=0,b=92,f,r2=1,c=0,c2=0;
 printf("Digite o numero maximo de linhas impar : ");
 scanf("%d",&a);
+if(a%2==0){
+    printf("numero de linhas tem que ser impar numero maximo eh: %d",a-1);
+    a--;
+}
 r=a;
+printf("\n\n");
 while(i1<a/2+1){
     while(d!=f){
         printf(" ");
