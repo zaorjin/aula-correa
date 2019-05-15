@@ -4,6 +4,11 @@ int main(){
     int l1=0,c1=0,n1,cc;
     printf("\nInforme o tamanho da maior linha par: ");
     scanf("%d",&n1);
+    if(n1%2!=0){
+        printf("numero de linhas tem que ser impar numero maximo eh: %d",n1+1);
+        n1++;
+    }
+    printf("\n");
     cc=n1;
     do{
         c1=0;
