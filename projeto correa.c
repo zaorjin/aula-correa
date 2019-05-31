@@ -3,7 +3,6 @@
 
 void registrar ();
 void mostrar ();
-void procurar ();
 
 struct notas_aluno{
 
@@ -29,7 +28,7 @@ aluno a[M_alunos];
 int main(){
     char opcao;
     do {
-        printf("Deseja adicionar(+), mostrar(m), procurar(p) parar(s): ");
+        printf("Deseja adicionar(+), mostrar(m), parar(s): ");
         scanf("%c", &opcao);
         getchar();
         printf("\n");
@@ -43,9 +42,6 @@ int main(){
                 mostrar();
             break;
 
-            case 'p':
-                procurar();
-            break;
         }
     }while (opcao!='s');
 
@@ -59,29 +55,12 @@ void mostrar(){
     int b=0;
     for(; b<i; b++){
 
-        printf("Aluno: %s dono do RA: %d\n", a[b].nome,a[b].ra);
+        printf("Aluno: %s, dono do RA: %d\n", a[b].nome,a[b].ra);
         printf("Tem notas %0.2f, %0.2f, %0.2f, %0.2f e media: %0.2f\n\n", a[b].nota.n1, a[b].nota.n2, a[b].nota.n3, a[b].nota.n4, a[b].media);
 
     }
 }
 
-void procurar(){
-    char p[250];
-    int b=0;
-    printf("Digite o nome do aluno: ");
-    scanf("%s", p);
-    getchar();
-
-    for(; b<i; b++){
-
-        if(p==a[b].nome){
-            printf("Aluno: %s dono do RA: %d\n", a[b].nome,a[b].ra);
-            printf("Tem notas %0.2f, %0.2f, %0.2f, %0.2f e media: %0.2f\n\n", a[b].nota.n1, a[b].nota.n2, a[b].nota.n3, a[b].nota.n4, a[b].media);
-        }
-
-    }
-
-}
 
 void registrar(){
 
